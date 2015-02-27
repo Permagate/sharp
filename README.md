@@ -10,6 +10,21 @@ This is a seed project to make a web application with Ruby on Rails as its backe
 
 3. Run **bundle exec rake bower:install**.
 
+4. Run **rails s** to start the server.
+
+5. Visit ``localhost:3000`` to check if angular runs successfully or not.
+
+### Notes
+
+Things to keep in mind when using this seed project.
+
+1. Coffee-rails and JBuilder gems are removed.
+
+2. Some gems are added in addition to the default generated ones:
+
+  * [rspec](http://rspec.info/) Unit testing framework.
+  * [capybara](https://jnicklas.github.io/capybara/) Functional testing framework.
+
 ### Starting from Scratch
 
 The quick start section is enough to get you started. But if you want to make from scratch, you can do so by doing the following steps (or just read the [original guide](http://angular-rails.com/)):
@@ -49,16 +64,31 @@ The quick start section is enough to get you started. But if you want to make fr
 
 7. Make a home page by running **rails g controller Home**. This page will contain our Angular app. (Optionally) Change the route generated in `./config/routes.rb` to `root 'home#index'`.
 
-### Extra Stuffs
+8. Create **app.js** in `./app/assets/javascripts/`. Fill it with the following line:
 
-If you use this seed project OOTB, there are some extra stuffs added not really related with scaffolding an angular-Rails application.
+  ```
+  var appModule = angular.module('App', [])
+  ```
 
-1. Coffee-rails and JBuilder gems are removed. Jquery is moved to bower.
+9. Add the following code to `./app/views/home/index.html.erb`.
 
-2. Some additional gems added:
+  ```
+  <div class="container-fluid" ng-app="App">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h1 ng-if="name">Hello, {{name}}</h1>
+      </div>
+      <div class="panel-body">
+        <form class="form-inline">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Enter your name" autofocus ng-model="name">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  ```
 
-  * **rspec** Unit testing framework.
-  * **capybara** Functional testing framework.
-  * **tzinfo-data** Timezone for development in Windows environment.
+10. Run **rails s** to start the server.
 
-3. `./app/assets/javascripts/home.js` is deleted.
+11. Visit `localhost:3000` to check if angular runs successfully or not.
