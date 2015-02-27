@@ -1,12 +1,20 @@
 # Shaping Angular Rails Applciation (Sharp)
 
-This seed project works OOTB. But if you want to start from scratch, this is a quick guide to make a web application with Ruby on Rails as its backend server and AngularJS as its frontend SPA framework.
+This is a seed project to make a web application with Ruby on Rails as its backend server and AngularJS as its frontend SPA framework. It is heavily inspired by [this guide](http://angular-rails.com/).
 
-For an even more comprehensive guide, this seed project is heavily inspired by [this guide](http://angular-rails.com/). In fact, this can be called the summary of it!
-
-### Quick Guide
+### Quick Start
 
 1. Go to your project root folder `./`.
+
+2. Run **bundle install**.
+
+3. Run **bundle exec rake bower:install**.
+
+### Starting from Scratch
+
+The quick start section is enough to get you started. But if you want to make from scratch, you can do so by doing the following steps (or just read the [original guide](http://angular-rails.com/)):
+
+1. Go to your workspace.
 
 2. Run **rails new \<app_name\> --skip-turbolinks**.
 
@@ -49,8 +57,8 @@ If you use this seed project OOTB, there are some extra stuffs added not really 
 
 2. Some additional gems added:
 
-* **rspec** Unit testing framework.
-* **capybara** Functional testing framework.
-* **tzinfo-data** Timezone for development in Windows environment.
+  * **rspec** Unit testing framework.
+  * **capybara** Functional testing framework.
+  * **tzinfo-data** Timezone for development in Windows environment.
 
 3. `./app/assets/javascripts/home.js` is deleted.
