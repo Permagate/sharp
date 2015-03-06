@@ -2,7 +2,7 @@
 var dashboardModule = angular.module('SampleProject.Dashboard', []);
 
 */
-dashboardModule.controller('SampleProject.Dashboard.Controller', dashboardController);
+dashboardModule.controller('SampleProject.Navigation.Controller', navigationController);
 
 dashboardController.$inject = ['$scope'];
 

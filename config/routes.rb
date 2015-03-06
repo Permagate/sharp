@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root  'home#index'
+  root  'web#index'
+  get   'web/fetch/*templateurl', to: 'web#fetch'
 end
