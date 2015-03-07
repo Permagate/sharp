@@ -11,5 +11,15 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sass-official
+//
 //= require angular
+//= require angular-bootstrap
+//= require angular-rails-templates
+//= require angular-ui-router
+//
+//= require app.js
+//= require navigation/navigation.js
+//
+//= require_tree ../../../web
 //= require_tree .
