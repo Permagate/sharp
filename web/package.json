@@ -1,0 +1,23 @@
+{
+  "name": "sharp",
+  "version": "1.0.0",
+  "description": "This is a seed project to make a web application with Ruby on Rails as its backend server and AngularJS as its frontend SPA framework. It is heavily inspired by [this guide](http://angular-rails.com/).",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Permagate/sharp.git"
+  },
+  "author": "Permagate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Permagate/sharp/issues"
+  },
+  "homepage": "https://github.com/Permagate/sharp",
+  "devDependencies": {
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}

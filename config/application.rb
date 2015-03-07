@@ -24,7 +24,7 @@ module Sharp
     config.active_record.raise_in_transactional_callbacks = true
 
     # Add angular project to sprockets pipeline.
-    config.assets.paths << Rails.root.join("web")
+    config.assets.paths << Rails.root.join("web", "src")
 
     # Add bower components to sprockets pipeline.
     config.assets.paths << Rails.root.join("vendor", "assets", "bower_components")

@@ -21,5 +21,5 @@
 //= require app.js
 //= require navigation/navigation.js
 //
-//= require_tree ../../../web
+//= require_tree ../../../web/src
 //= require_tree .
