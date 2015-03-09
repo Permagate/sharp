@@ -16,6 +16,7 @@ group :development, :test do
   gem 'web-console'
   gem 'rspec'
   gem 'capybara'
+  gem 'guard'
 end
 
 platforms :mingw, :mswin, :x64_mingw, :jruby do
