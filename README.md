@@ -2,6 +2,18 @@
 
 This is a seed project to make a web application with Ruby on Rails as its backend server and AngularJS as its frontend SPA framework. It is heavily inspired by [this guide](http://angular-rails.com/).
 
+### Prequisites
+
+1. Install Ruby
+
+2. Install Rails
+
+3. Install Bundler
+
+4. Install Node (along with NPM)
+
+5. Install Bower
+
 ### Quick Start
 
 1. Go to your project root folder `./`.

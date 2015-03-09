@@ -15,6 +15,7 @@
 /log/*
 !/log/.keep
 /tmp
+npm-debug.log
 
 # Ignore bower components.
 /vendor/assets/bower_components/
