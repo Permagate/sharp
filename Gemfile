@@ -15,7 +15,7 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console'
   gem 'rspec'
-  gem 'jasmine-rails'
+  gem 'capybara'
 end
 
 platforms :mingw, :mswin, :x64_mingw, :jruby do
